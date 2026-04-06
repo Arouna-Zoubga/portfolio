@@ -3,37 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio Professionnel</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Portfolio | Arouna Zougba</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("WKKiwnfctNu-CewS8"); // Clé publique EmailJS
+        })();
+    </script>
+    <script src="script.js"></script>
+    <script src="portfolio-scripts.js"></script>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Mon Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand fw-bold" href="#">Arouna<span> DZ</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#stages">Stages</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#vie-associative">Vie Associative</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#stages">Expériences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Formations</a></li>
+                    <li class="nav-item"><a class="nav-link btn-contact" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <header class="hero-section">
-        <div class="container text-center">
-            <div class="profile-image-container">
-                <img src="imag\WhatsApp Image 2025-05-09 at 13.32.12_5e20c061.jpg" alt="Photo de profil" class="profile-image">
+        <div class="hero-background">
+            <div class="hero-particles"></div>
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="hero-badge">
+                        <span class="badge-pulse"></span>
+                        <span class="badge-text">Disponible pour les opportunités</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="hero-greeting">Bonjour, je suis</span>
+                        <span class="hero-name">Arouna ZOUGBA</span>
+                    </h1>
+                    <div class="hero-role">
+                        <span class="role-text">Ingénieur en Génie Électrique || Chargé academique de 
+                            l'Association des Etudiants et stagiaires Burkinabé au Maroc (AEBM section Mohammedia)</span>
+                        
+                    </div>
+                    <p class="hero-description">
+                        Passionné par l'innovation technologique et l'efficacité énergétique,
+                        je transforme les défis techniques en solutions intelligentes et durables.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-hero">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Expériences pratiques de stage en entreprise</span>
+                        </div>
+                        <div class="stat-hero">
+                            <span class="stat-number">4+</span>
+                            <span class="stat-label">Projets réalisés</span>
+                        </div>
+                        <div class="stat-hero">
+                            <span class="stat-number">12+</span>
+                            <span class="stat-label">Technologies maîtrisées</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-hero btn-primary">
+                            <span>Me contacter</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#projets" class="btn btn-hero btn-outline-light">
+                            <span>Voir mes projets</span>
+                            <i class="fas fa-briefcase"></i>
+                        </a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://linkedin.com/in/arouna-dindane-zougba-a6944933b" class="social-link"
+                            target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/arouna-zougba" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block" data-aos="fade-left">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image-container">
+                            <img src="imag/PROFIL.jpg" alt="Arouna Zougba" class="hero-image">
+                            <div class="hero-image-border"></div>
+                        </div>
+                        <div class="floating-tech">
+                            <div class="tech-icon tech-icon-1">
+                                <i class="fas fa-microchip"></i>
+                                <span>IoT</span>
+                            </div>
+                            <div class="tech-icon tech-icon-2">
+                                <i class="fas fa-bolt"></i>
+                                <span>Énergie</span>
+                            </div>
+                            <div class="tech-icon tech-icon-3">
+                                <i class="fas fa-cogs"></i>
+                                <span>Automatisation</span>
+                            </div>
+                            <div class="tech-icon tech-icon-4">
+                                <i class="fas fa-code"></i>
+                                <span>Programmation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <h1>ZOUGBA AROUNA DINDANE</h1>
-            <p class="lead">Elève ingénieur en Genie Electrique et Contrôle des Systèmes Industriels</p>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span class="scroll-text">Découvrir plus</span>
         </div>
     </header>
 
@@ -44,13 +147,17 @@
                 <div class="row align-items-center">
                     <div class="col-md-8">
                         <div class="about-content">
-                            <p class="about-text">Je suis un élève ingénieur en génie électrique et contrôle des systèmes
-                                industriels. Je suis une personne captivée par les systèmes industriels. 
-                                C'est pourquoi, dès maintenant, je m'investis plus dans la réalisation de  
-                                projets qui contribueront à faire de moi un élément clé dans le monde de la conversion
-                                et de l'efficacité énergétique.</p>
+                            <p class="about-text">Je suis élève ingénieur en génie électrique et contrôle des systèmes
+                                industriels,
+                                passionné par les environnements industriels, l'automatisation et les technologies de
+                                conversion d'énergie. Curieux, rigoureux et orienté résultats,
+                                je m'investis dès aujourd'hui dans des projets techniques concrets afin de développer
+                                une expertise solide et devenir un acteur clé dans les
+                                domaines de l'efficacité énergétique, des systèmes intelligents et de l'industrie du
+                                futur.</p>
                             <div class="about-actions">
-                                <a href="https://drive.google.com/file/d/1XmSteVAZiLdiAUk8JN6vwA53gE015LFs/view?usp=drive_link" class="btn btn-primary download-cv" target="_blank">
+                                <a href="https://drive.google.com/file/d/1RzNbVVyZRZ0kE9VkuHtlYLntovDXNTxs/view?usp=sharing"
+                                    class="btn btn-primary download-cv" target="_blank">
                                     <i class="fas fa-download"></i> Télécharger mon CV
                                 </a>
                             </div>
@@ -59,223 +166,670 @@
                     <div class="col-md-4">
                         <div class="about-stats">
                             <div class="stat-item">
-                                <span class="stat-number">3+</span>
+                                <span class="stat-number">4+</span>
                                 <span class="stat-label">Années d'études Universitaire</span>
                             </div>
                             <div class="stat-item">
-                                <span class="stat-number">2+</span>
-                                <span class="stat-label">Projets Réalisés en milieu scolaire</span>
+                                <span class="stat-number">4+</span>
+                                <span class="stat-label">Projets Réalisés en milieu Universitairespan>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
         </section>
 
         <section id="competences" class="mb-5">
-            <h2>Compétences</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <h4>Compétences Techniques</h4>
-                    <div class="skill-item">
-                        <span class="skill-name">HTML/CSS</span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+            <div class="section-header">
+                <h2 class="section-title">Compétences Techniques</h2>
+                <p class="section-subtitle">Une expertise diversifiée en génie électrique et systèmes industriels</p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Catégorie: Programmation & Développement -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-code"></i>
                         </div>
+                        <h3>Programmation & Développement</h3>
                     </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Python</span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                    <div class="skills-list">
+                        <div class="skill-item-modern">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Matlab/Simulink</span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                        <div class="skill-item-modern">
+                            <div class="skill-info">
+                                <span class="skill-name">Langage C</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">langage C</span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Arduino</span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">ESP32</span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Autocad</span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">TIA Portal</span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Rs logix 5000</span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">TwidoSuite</span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                        <div class="skill-item-modern">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML/CSS</span>
+                                <span class="skill-level">Avancé</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-4">
-                    <h4>Compétences Professionnelles</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Analyse pertinente</span>
-                        <span class="skill-tag">Travail d'équipe</span>
-                        <span class="skill-tag">Résolution de problèmes</span>
-                        <span class="skill-tag">Adaptabilité</span>
-                        <span class="skill-tag">Organisation</span>
-                        <span class="skill-tag">sens de la responsabilitée</span>
+
+                <!-- Catégorie: Automatisation & PLC -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Automatisation & PLC</h3>
                     </div>
-                </div> 
+                    <div class="skills-list">
+                        <div class="skill-item-modern">
+                            <div class="skill-info">
+                                <span class="skill-name">TIA Portal</span>
+                                <span class="skill-level">Avancé</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-modern">
+                            <div class="skill-info">
+                                <span class="skill-name">Factory IO</span>
+                                <span class="skill-level">Intermédiaire </span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-modern">
+                            <div class="skill-info">
+                                <span class="skill-name">TwidoSuite</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Catégorie: Électronique & IoT -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3>Électronique & IoT</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item-modern">
+                            <div class="skill-info">
+                                <span class="skill-name">Arduino</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-modern">
+                            <div class="skill-info">
+                                <span class="skill-name">ESP32</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-modern">
+                            <div class="skill-info">
+                                <span class="skill-name">Matlab/Simulink</span>
+                                <span class="skill-level">Avancé</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Catégorie: CAO Électrique -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-drafting-compass"></i>
+                        </div>
+                        <h3>CAO Électrique</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item-modern">
+                            <div class="skill-info">
+                                <span class="skill-name">AutoCAD Electrical</span>
+                                <span class="skill-level">Avancé</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-modern">
+                            <div class="skill-info">
+                                <span class="skill-name">SolidWorks Electrical</span>
+                                <span class="skill-level">Avancé</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-modern">
+                            <div class="skill-info">
+                                <span class="skill-name">Caneco BT</span>
+                                <span class="skill-level">Intermédiaire</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="60"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétences Professionnelles -->
+            <div class="section-header" style="margin-top: 4rem;">
+                <h2 class="section-title">Compétences Professionnelles</h2>
+                <p class="section-subtitle">Les soft skills qui font la différence</p>
+            </div>
+
+            <div class="soft-skills-container" data-aos="fade-up">
+                <div class="soft-skills-grid">
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>Analyse pertinente</h4>
+                        <p>Capacité à analyser rapidement les situations complexes et à proposer des solutions efficaces
+                        </p>
+                    </div>
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Travail d'équipe</h4>
+                        <p>Collaboration efficace et communication fluide au sein des équipes pluridisciplinaires</p>
+                    </div>
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>Résolution de problèmes</h4>
+                        <p>Approche méthodique pour identifier et résoudre les défis techniques</p>
+                    </div>
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h4>Adaptabilité</h4>
+                        <p>Flexibilité face aux nouveaux défis et capacité d'apprentissage rapide</p>
+                    </div>
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <h4>Organisation</h4>
+                        <p>Gestion efficace des priorités</p>
+                    </div>
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Sens de la responsabilité</h4>
+                        <p>Engagement fort dans la réalisation des objectifs et la qualité du travail</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="projets" class="mb-5">
-            <h2>Mes Projets</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="card">
-                        <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="imag\IMG_20240521_145320_161.JPG" class="card-img-top" alt="Projet 1 - Image 1">
+            <div class="section-header">
+                <h2 class="section-title">Mes Projets</h2>
+                <p class="section-subtitle">Découvrez mes réalisations concrètes en génie électrique et systèmes
+                    industriels</p>
+            </div>
+
+            <div class="projects-container">
+                <!-- Projet 1: Supervision IoT -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-header">
+                        <div class="project-image-container">
+                            <div id="carousel1" class="project-carousel carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="imag\IMG_20240521_145320_161.JPG" class="d-block w-100"
+                                            alt="Supervision IoT - Image 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imag\pro14.jpg" class="d-block w-100" alt="Supervision IoT - Image 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imag\pro13.jpg" class="d-block w-100" alt="Supervision IoT - Image 3">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imag\pro12.JPG" class="d-block w-100" alt="Supervision IoT - Image 4">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imag\proj11.JPG" class="d-block w-100"
+                                            alt="Supervision IoT - Image 5">
+                                    </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <img src="imag\pro14.jpg" class="card-img-top" alt="Projet 1 - Image 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="imag\pro13.jpg" class="card-img-top" alt="Projet 1 - Image 3">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="imag\pro12.JPG" class="card-img-top" alt="Projet 1 - Image 4">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="imag\proj11.JPG" class="card-img-top" alt="Projet 1 - Image 5">
-                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel1"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                    <span class="visually-hidden">Précédent</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel1"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                    <span class="visually-hidden">Suivant</span>
+                                </button>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Précédent</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Suivant</span>
-                            </button>
+                            <div class="project-badge">
+                                <span class="badge-rank">3ᵉ</span>
+                                <span class="badge-text">Meilleur projet</span>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Projet de fin d'etudes DUT</h5>
-                            <p class="card-text project-description"> <p>🔧 Dans le cadre de mon projet de fin d'études du Diplôme Universitaire de Technologie (DUT) en électrotechnique, 
-                                électronique et systèmes industriels, j'ai développé un système de supervision à distance de lampadaires solaires
-                                 à l'aide de technologies IoT 🌐 (Internet des Objets). </p>
-                               <p>🎯 Ce projet visait à optimiser la gestion de l'éclairage public solaire en intégrant des capteurs et des modules
-                                de communication afin de surveiller en temps réel l'état de fonctionnement des lampadaires :
-                                
-                                
-                                🔋 Niveau de la batterie <br>
-                                
-                                💡 Intensité lumineuse <br>
-                                
-                                ☀️ Production solaire <br>
-                                
-                                ⚙️ État des composants, etc. 
-                            </p>
-                                <p>📡 Les données collectées étaient transmises à une plateforme cloud accessible via une interface web intuitive 💻, 
-                                    permettant une visualisation, une analyse et une intervention rapide en cas de défaillance. <br>
-                                    
-                                    🧠 Compétences mobilisées : <br>
-                                    
-                                    👨‍💻 Programmation de microcontrôleurs et intégration de capteurs (tension, courant, luminosité) <br>
-                                    
-                                    📶 Communication sans fil (ex. : Wi-Fi, GSM) <br>
-                                    
-                                    ☁️ Envoi et traitement de données dans un environnement cloud IoT (Cumulocity) <br></p>
-                                
-                                
-                                <p>🏆 Ce projet a été classé 3ᵉ meilleur projet de l'année, témoignant de sa pertinence technique, de son originalité 
-                                    et de son impact potentiel dans la gestion intelligente de l'éclairage public, notamment en zones rurales ou isolées 🌍.</p></p>
-                            <a href="https://drive.google.com/drive/folders/1QIEVaSi2vGrbnRe1W3ONja6zjyEhqopt?usp=drive_link" class="btn btn-primary">Voir le projet</a>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-category">IoT & Énergie</span>
+                            <span class="project-date">DUT 2024</span>
+                        </div>
+                        <h3 class="project-title">Système de Supervision IoT pour Lampadaires Solaires</h3>
+                        <p class="project-description">
+                            Développement d'une solution innovante de supervision à distance pour lampadaires solaires
+                            intégrant des capteurs intelligents et une plateforme de gestion cloud pour optimiser
+                            l'efficacité énergétique et la maintenance prédictive.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">ESP32</span>
+                            <span class="tech-tag">IoT</span>
+                            <span class="tech-tag">Cumulocity</span>
+                            <span class="tech-tag">Web Interface</span>
+                        </div>
+                        <div class="project-achievements">
+                            <div class="achievement-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>3ᵉ meilleur projet de l'année</span>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-leaf"></i>
+                                <span>Solution écologique innovante</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://drive.google.com/drive/folders/1QIEVaSi2vGrbnRe1W3ONja6zjyEhqopt?usp=drive_link"
+                                class="btn btn-primary" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                Voir le projet
+                            </a>
+                            <button class="btn btn-outline-primary project-details-btn">
+                                <i class="fas fa-info-circle"></i>
+                                Détails
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card">
-                        <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Projet 2: Station Météo -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-header">
+                        <div class="project-image-container">
+                            <div id="carousel2" class="project-carousel carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="imag\WhatsApp Image 2025-01-15 at 11.25.20_9ff80611.jpg"
+                                            class="d-block w-100" alt="Station Météo - Image 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imag\WhatsApp Image 2025-05-11 at 15.48.41_d9ee6c16.jpg"
+                                            class="d-block w-100" alt="Station Météo - Image 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imag\pro15.jpg" class="d-block w-100" alt="Station Météo - Image 3">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imag\WhatsApp Image 2025-05-11 at 15.48.41_c1eddce4.jpg"
+                                            class="d-block w-100" alt="Station Météo - Image 4">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imag\WhatsApp Image 2025-05-11 at 15.48.41_b50e90fb.jpg"
+                                            class="d-block w-100" alt="Station Météo - Image 5">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel2"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                    <span class="visually-hidden">Précédent</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel2"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                    <span class="visually-hidden">Suivant</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-category">IoT & Capteurs</span>
+                            <span class="project-date">Projet de fin de module</span>
+                        </div>
+                        <h3 class="project-title">Station Météo Intelligente Connectée</h3>
+                        <p class="project-description">
+                            Conception et réalisation d'une station météorologique complète avec mesure en temps réel
+                            des paramètres climatiques et transmission des données vers une plateforme cloud pour
+                            analyse et visualisation.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">ESP32</span>
+                            <span class="tech-tag">Capteurs</span>
+                            <span class="tech-tag">ThingSpeak</span>
+                            <span class="tech-tag">Wi-Fi</span>
+                        </div>
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-temperature-high"></i>
+                                <span>Température & Humidité</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-wind"></i>
+                                <span>Vent & Pression</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-cloud-rain"></i>
+                                <span>Détection de pluie</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://drive.google.com/drive/folders/1VIQxILT1AOAgUjvyw6-q4rjIajZEwThr?usp=drive_link"
+                                class="btn btn-primary" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                Voir le projet
+                            </a>
+                            <button class="btn btn-outline-primary project-details-btn">
+                                <i class="fas fa-info-circle"></i>
+                                Détails
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 3: Porte de Garage -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-header">
+                        <div class="project-image-container">
+                            <div id="garageDoorCarousel" class="project-carousel carousel slide"
+                                data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="imag/PRO1.jpg" class="d-block w-100" alt="Porte de Garage - Image 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imag/PRO3.jpg" class="d-block w-100" alt="Porte de Garage - Image 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imag/PROJET_perso.png" class="d-block w-100"
+                                            alt="Porte de Garage - Schéma 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imag/PROJET_perso2.png" class="d-block w-100"
+                                            alt="Porte de Garage - Schéma 2">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#garageDoorCarousel"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                    <span class="visually-hidden">Précédent</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#garageDoorCarousel"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                    <span class="visually-hidden">Suivant</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-category">Domotique & Web</span>
+                            <span class="project-date">Personnel</span>
+                        </div>
+                        <h3 class="project-title">Système de Contrôle de Porte de Garage Connectée</h3>
+                        <p class="project-description">
+                            Développement d'une interface web intelligente pour commander à distance une porte de garage
+                            avec affichage en temps réel de l'état et intégration de capteurs de sécurité.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">ESP32</span>
+                            <span class="tech-tag">HTML/CSS/JS</span>
+                            <span class="tech-tag">Web Server</span>
+                            <span class="tech-tag">Capteurs</span>
+                        </div>
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-lock"></i>
+                                <span>Contrôle sécurisé</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Interface web responsive</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Arrêt d'urgence intégré</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://drive.google.com/file/d/19L9IelGeYLDRPS8f7l-_6AUdQtUiwUpP/view?usp=sharing"
+                                class="btn btn-primary" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                Voir le projet
+                            </a>
+                            <button class="btn btn-outline-primary project-details-btn">
+                                <i class="fas fa-info-circle"></i>
+                                Détails
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                            <!-- Projet 2: Simulation Ligne de Remplissage -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-header">
+                    <div class="project-image-container">
+                        <div id="carousel2" class="project-carousel carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="imag\WhatsApp Image 2025-01-15 at 11.25.20_9ff80611.jpg" class="card-img-top" alt="Projet 2 - Image 1">
+                                    <img src="imag/11.png" class="d-block w-100" alt="Ligne de Remplissage - Image 1">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="imag\WhatsApp Image 2025-05-11 at 15.48.41_d9ee6c16.jpg" class="card-img-top" alt="Projet 2 - Image 2">
+                                    <img src="imag/22.png" class="d-block w-100" alt="Ligne de Remplissage - Image 2">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="imag\pro15.jpg" class="card-img-top" alt="Projet 2 - Image 3">
+                                    <img src="imag/33.png" class="d-block w-100" alt="Ligne de Remplissage - Image 3">
                                 </div>
-
-                                <div class="carousel-item">
-                                    <img src="imag\WhatsApp Image 2025-05-11 at 15.48.41_c1eddce4.jpg" class="card-img-top" alt="Projet 2 - Image 3">
+                                 <div class="carousel-item">
+                                    <img src="imag/44.png" class="d-block w-100" alt="Ligne de Remplissage - Image 3">
                                 </div>
-
-                                <div class="carousel-item">
-                                    <img src="imag\WhatsApp Image 2025-05-11 at 15.48.41_b50e90fb.jpg" class="card-img-top" alt="Projet 2 - Image 3">
+                                 <div class="carousel-item">
+                                    <img src="imag/55.png" class="d-block w-100" alt="Ligne de Remplissage - Image 3">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="carousel-control-prev-icon"></span>
                                 <span class="visually-hidden">Précédent</span>
                             </button>
                             <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="carousel-control-next-icon"></span>
                                 <span class="visually-hidden">Suivant</span>
                             </button>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Réalisation d'une station météorologique</h5>
-                            <p class="card-text project-description"><p>Ce projet consiste à concevoir et mettre en œuvre une station météorologique intelligente 
-                                capable de mesurer et de transmettre en temps réel les principaux paramètres climatiques.
-                                 L'objectif est de permettre la surveillance environnementale à distance via une interface Web. <br>
-                                </p>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <div class="project-meta">
+                        <span class="project-category">Automatisation Industrielle</span>
+                        <span class="project-date">Projet de fin de module</span>
+                    </div>
+                    <h3 class="project-title">Simulation de Ligne de Remplissage de Flacons</h3>
+                    <p class="project-description">
+                        Conception et programmation complète d'une ligne automatisée de remplissage de flacons 
+                        avec contrôle de processus, gestion des capteurs et optimisation de la production 
+                        via programmation TIA Portal et simulation FluidSIM.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">TIA Portal</span>
+                        <span class="tech-tag">FluidSIM</span>
+                        <span class="tech-tag">Automatisation</span>
+                        <span class="tech-tag">PLC Siemens</span>
+                    </div>
+                    <div class="project-features">
+                        <div class="feature-item">
+                            <i class="fas fa-cogs"></i>
+                            <span>Contrôle automatisé du processus</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Optimisation de la production</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-microchip"></i>
+                            <span>Programmation PLC avancée</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://drive.google.com/file/d/1tCnQOinkZ4mqpHcHzTua0cIRFo9CBYyf/view?usp=sharing" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Voir le projet
+                        </a>
+                        <button class="btn btn-outline-primary project-details-btn">
+                            <i class="fas fa-info-circle"></i>
+                            Détails
+                        </button>
+                    </div>
+        </section>
+
+        <!-- Section Vie Associative -->
+        <section id="vie-associative" class="mb-5">
+            <div class="section-header">
+                <h2 class="section-title">Vie Associative</h2>
+                <p class="section-subtitle">Mon engagement au sein de l'AEBM - Association des Etudiants et Stagiaires Burkinabé au Maroc</p>
+            </div>
             
-                                <P> La station utilise des capteurs électroniques pour mesurer : <br>
-                                
-                                🌡️ Température <br>
-                                
-                                💧 Humidité<br>
-                                
-                                🌬️ Vitesse et direction du vent<br>
-                                
-                                🌧️ Niveau de pluie<br>
-                                
-                                ☀️ Rayonnement solaire (facultatif)<br>
-                                
-                                📈 Pression atmosphérique </P>
-                                
-                                <p>Ces données sont traitées par un microcontrôleur ( ESP32 ), puis transmises à une plateforme cloud Thingspeak via Wi-Fi .
-                                
-                                Une interface utilisateur permet de consulter en temps réel l'état météo et d'accéder à l'historique des mesures sous forme de graphiques.</p></p>
-                            <a href="https://drive.google.com/drive/folders/1VIQxILT1AOAgUjvyw6-q4rjIajZEwThr?usp=drive_link" class="btn btn-primary">Voir le projet</a>
+            <div class="associative-gallery" data-aos="fade-up">
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="gallery-image-container">
+                            <img src="imag/vie1.jpg" alt="Vie associative AEBM 1" class="gallery-image">
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="gallery-image-container">
+                            <img src="imag/vie2.jpg" alt="Vie associative AEBM 2" class="gallery-image">
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="gallery-image-container">
+                            <img src="imag/vie3.jpg" alt="Vie associative AEBM 3" class="gallery-image">
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="gallery-image-container">
+                            <img src="imag/vie7.jpeg" alt="Vie associative AEBM 4" class="gallery-image">
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500">
+                        <div class="gallery-image-container">
+                            <img src="imag/vie5.jpg" alt="Vie associative AEBM 5" class="gallery-image">
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600">
+                        <div class="gallery-image-container">
+                            <img src="imag/vi6.jpeg" alt="Vie associative AEBM 6" class="gallery-image">
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="700">
+                        <div class="gallery-image-container">
+                            <img src="imag/VIE20.jpeg" alt="Vie associative AEBM 7" class="gallery-image">
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="800">
+                        <div class="gallery-image-container">
+                            <img src="imag/vie9.jpeg" alt="Vie associative AEBM 8" class="gallery-image">
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="900">
+                        <div class="gallery-image-container">
+                            <img src="imag/vie10.jpeg" alt="Vie associative AEBM 9" class="gallery-image">
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1000">
+                        <div class="gallery-image-container">
+                            <img src="imag/vie11.jpg" alt="Vie associative AEBM 10" class="gallery-image">
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1100">
+                        <div class="gallery-image-container">
+                            <img src="imag/vie12.jpeg" alt="Vie associative AEBM 11" class="gallery-image">
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1200">
+                        <div class="gallery-image-container">
+                            <img src="imag/VIE13.jpeg" alt="Vie associative AEBM 12" class="gallery-image">
+                        </div>
+                    </div>
+                     <div class="gallery-item" data-aos="zoom-in" data-aos-delay="900">
+                        <div class="gallery-image-container">
+                            <img src="imag/VIE18.jpeg" alt="Vie associative AEBM 9" class="gallery-image">
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1000">
+                        <div class="gallery-image-container">
+                            <img src="imag/vi15.jpeg" alt="Vie associative AEBM 10" class="gallery-image">
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1100">
+                        <div class="gallery-image-container">
+                            <img src="imag/vi16.jpg" alt="Vie associative AEBM 11" class="gallery-image">
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1200">
+                        <div class="gallery-image-container">
+                            <img src="imag/VI17.jpeg" alt="Vie associative AEBM 12" class="gallery-image">
                         </div>
                     </div>
                 </div>
@@ -284,87 +838,121 @@
 
         <section id="stages" class="mb-5">
             <h2>Stages</h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>GROUPELEC </h4>
+                    <p class="text-muted">06/2025 - 07/2025</p>
+                    <p>
+                    <p>🎓 Ma première année en filière d'ingénieur en Génie Électrique
+                        et Contrôle des Systèmes Industriels à l'ENSET Mohammedia s'est
+                        clôturée par un stage d'initiation au sein de GROUPELEC.</p>
+
+                    <p>Cette expérience m'a permis de : <br>
+                        🔹 Découvrir le fonctionnement d'un bureau d'études à travers
+                        l'utilisation de logiciels tels que Caneco BT, AutoCAD Electrical
+                        , SolidWorks Electrical et SEE Electrical. <br>
+                        🔹 Mettre en pratique mes connaissances en atelier à travers le câblage
+                        de tableaux électriques, l'intégration d'automates et la manipulation
+                        d'appareillages industriels (disjoncteurs, relais, centrales de mesure,
+                        régulateurs de température, etc.). <br>
+                        🔹 Comprendre le rôle essentiel du service qualité dans la validation des
+                        réalisations et l'assurance de la conformité normative.</p>
+
+                    <p>✨ Ce stage a constitué une première immersion enrichissante en tant qu'ingénieur
+                        dans le monde professionnel, renforçant à la fois mes compétences techniques et
+                        ma compréhension du cycle complet d'un projet électrique, de la conception à la mise en service.
+                    </p>
+                    </p>
+
+                </div>
+            </div>
+
+
             <div class="timeline">
                 <div class="timeline-item">
                     <h4>Agamine Solar </h4>
                     <p class="text-muted">04/2024 - 06/2024</p>
-                    <p> <p>Dans le cadre de notre stage de fin d'études en collaboration 
-                        avec l'entreprise Agamine Solar, nous avons mené un projet visant 
-                        à moderniser le système de supervision des lampadaires solaires 
+                    <p>
+                    <p>Dans le cadre de notre stage de fin d'études en collaboration
+                        avec l'entreprise Agamine Solar, nous avons mené un projet visant
+                        à moderniser le système de supervision des lampadaires solaires
                         installés par l'entreprise.</p>
 
-                        <p> 🛠️ État initial :
-                        Lors de notre arrivée en entreprise, nous avons eu l'occasion de 
-                        visiter les installations et d'analyser le système de supervision existant. 
-                        Celui-ci reposait sur une méthode traditionnelle : il fallait établir une connexion 
-                        filaire entre un ordinateur et le contrôleur solaire pour accéder aux données du 
+                    <p> 🛠️ État initial :
+                        Lors de notre arrivée en entreprise, nous avons eu l'occasion de
+                        visiter les installations et d'analyser le système de supervision existant.
+                        Celui-ci reposait sur une méthode traditionnelle : il fallait établir une connexion
+                        filaire entre un ordinateur et le contrôleur solaire pour accéder aux données du
                         lampadaire et effectuer des paramétrages à l'aide du logiciel PhocosLink.</p>
-                        
-                        <p> 🎯 Objectif du projet : <br>
-                        Notre mission consistait à concevoir un système de supervision et de paramétrage à 
+
+                    <p> 🎯 Objectif du projet : <br>
+                        Notre mission consistait à concevoir un système de supervision et de paramétrage à
                         distance, permettant de : <br>
-                        
+
                         📡 Récupérer les données de chaque lampadaire solaire sans câble ; <br>
-                        
+
                         🔧 Effectuer des réglages via une plateforme web dédiée ; <br>
-                        
-                        🌐 Utiliser une connexion Wi-Fi locale à proximité de chaque lampadaire pour assurer 
+
+                        🌐 Utiliser une connexion Wi-Fi locale à proximité de chaque lampadaire pour assurer
                         la communication avec le système embarqué.</p>
-                        
-                        <p> 💻 Nous avons ainsi entamé le développement d'une interface Web qui aurait permis de
-                         visualiser les données et de modifier les paramètres en temps réel, de manière plus 
-                         ergonomique et sans intervention physique directe sur le contrôleur.</p>
-                        
-                        <p> ⏳ Limites rencontrées : <br>
-                        Malheureusement, le projet n'a pas pu être finalisé entièrement dans les délais impartis, 
-                        en raison du temps nécessaire à la préparation de la soutenance et des concours. Toutefois, 
-                        les bases techniques et fonctionnelles ont été posées pour une solution de supervision plus 
+
+                    <p> 💻 Nous avons ainsi entamé le développement d'une interface Web qui aurait permis de
+                        visualiser les données et de modifier les paramètres en temps réel, de manière plus
+                        ergonomique et sans intervention physique directe sur le contrôleur.</p>
+
+                    <p> ⏳ Limites rencontrées : <br>
+                        Malheureusement, le projet n'a pas pu être finalisé entièrement dans les délais impartis,
+                        en raison du temps nécessaire à la préparation de la soutenance et des concours. Toutefois,
+                        les bases techniques et fonctionnelles ont été posées pour une solution de supervision plus
                         moderne et évolutive.</p>
-                        
-                        </p>
+
+                    </p>
                 </div>
             </div>
+
 
             <div class="timeline">
                 <div class="timeline-item">
                     <h4>Ventec Maroc </h4>
                     <p class="text-muted">07/2023 - 09/2023</p>
-                    <p> <p> Dans le cadre de ma formation, j'ai effectué un stage au sein 
+                    <p>
+                    <p> Dans le cadre de ma formation, j'ai effectué un stage au sein
                         de l'entreprise Ventec Maroc, spécialisée dans les systèmes de
-                         ventilation, de climatisation et d'extraction frigorifique.
-                          Ce stage s'est déroulé principalement sur le site de l'Hôtel Tikida Palace à Agadir, 
-                          où j'ai été intégré à l'équipe de maintenance après-vente.</p>
+                        ventilation, de climatisation et d'extraction frigorifique.
+                        Ce stage s'est déroulé principalement sur le site de l'Hôtel Tikida Palace à Agadir,
+                        où j'ai été intégré à l'équipe de maintenance après-vente.</p>
 
-                        <p> 🧠 Missions réalisées : <br>
-                        
+                    <p> 🧠 Missions réalisées : <br>
+
                         Participation à la maintenance des installations frigorifiques mises en place par Ventec
-                         Maroc dans l'hôtel. <br>
-                        
+                        Maroc dans l'hôtel. <br>
+
                         Intervention sur les groupes de chambres froides, notamment : <br>
-                        
+
                         🧊 Montage des groupes frigorifiques <br>
-                        
+
                         ❄️ Connexion aux évaporateurs <br>
-                        
+
                         🌡️ Supervision de la température via les coffrets de commande et de câblage <br>
-                        
+
                         Observation et compréhension du système de surveillance intégré permettant de suivre les
-                         températures des chambres froides directement sur les coffrets. </p>
-                        
-                        <p> 📦 Étude et application des schémas de câblage électrique pour :
-                        
+                        températures des chambres froides directement sur les coffrets. </p>
+
+                    <p> 📦 Étude et application des schémas de câblage électrique pour :
+
                         Les groupes de chambres froides <br>
-                        
+
                         Les moteurs d'extraction d'air </p>
-                        
-                        <p>🧠 Compétences acquises : <br>
-                        
+
+                    <p>🧠 Compétences acquises : <br>
+
                         Lecture et interprétation de schémas électriques <br>
-                        
+
                         Câblage de coffrets de contrôle pour systèmes frigorifiques <br>
-                        
+
                         Diagnostic et maintenance de systèmes de climatisation et de réfrigération <br>
-                        
+
                         Travail en équipe sur un site client en conditions réelles <br>
                     </p>
                     <p>
@@ -375,43 +963,45 @@
                 <div class="timeline-item">
                     <h4>SEEERE </h4>
                     <p class="text-muted">07/2020 - 09/2020</p>
-                    <p> <p>Au cours de mon stage au sein de l'entreprise SEEERE, j'ai eu l'opportunité de participer 
-                        à deux volets principaux d'activités : <br> les installations électriques domestiques et les 
+                    <p>
+                    <p>Au cours de mon stage au sein de l'entreprise SEEERE, j'ai eu l'opportunité de participer
+                        à deux volets principaux d'activités : <br> les installations électriques domestiques et les
                         systèmes solaires photovoltaïques.</p>
 
-                        <p> 🔌 1. Installations électriques pour nouvelles constructions <br>
+                    <p> 🔌 1. Installations électriques pour nouvelles constructions <br>
                         J'ai été impliqué dans les travaux d'installation électrique dans des habitations en cours
-                         de construction. Mes principales tâches consistaient à : <br>
-                        
+                        de construction. Mes principales tâches consistaient à : <br>
+
                         Réaliser le passage des câbles dans les gaines techniques ;<br>
-                        
-                        Effectuer la connexion des différents appareils électriques (prises, luminaires, interrupteurs…) ;<br>
-                        
+
+                        Effectuer la connexion des différents appareils électriques (prises, luminaires, interrupteurs…)
+                        ;<br>
+
                         Procéder aux tests de continuité et de bon fonctionnement des circuits ;<br>
-                        
+
                         Assurer le dimensionnement et le câblage des disjoncteurs dans le tableau électrique ;<br>
-                        
+
                         Participer à la mise en conformité des installations selon les normes en vigueur.</p>
-                        
-                        <p>🔋 2. Mise en place d'un système solaire photovoltaïque <br>
-                        Dans un second temps, j'ai collaboré à l'installation d'un système solaire autonome, 
+
+                    <p>🔋 2. Mise en place d'un système solaire photovoltaïque <br>
+                        Dans un second temps, j'ai collaboré à l'installation d'un système solaire autonome,
                         destiné à alimenter une habitation. Les tâches réalisées incluaient : <br>
-                        
+
                         Le raccordement des panneaux photovoltaïques ; <br>
-                        
+
                         L'installation et la connexion des régulateurs de charge et des batteries de stockage ; <br>
-                        
+
                         L'intégration de convertisseurs (onduleurs) pour transformer la tension continue en tension
-                         alternative utilisable par les appareils domestiques.</p>
-                        
-                        <p>🧠 Compétences développées : <br>
-                        
+                        alternative utilisable par les appareils domestiques.</p>
+
+                    <p>🧠 Compétences développées : <br>
+
                         Lecture de plans d'installations électriques ; <br>
-                        
+
                         Câblage et mise en service de circuits domestiques et solaires ; <br>
-                        
+
                         Dimensionnement des protections électriques (disjoncteurs, fusibles) ; <br>
-                        
+
                         Notions d'autonomie énergétique et de gestion de l'énergie solaire.</p>
                 </div>
             </div>
@@ -420,57 +1010,61 @@
                 <div class="timeline-item">
                     <h4>SONABEL (Société Nationale d'Électricité du Burkina Faso) </h4>
                     <p class="text-muted">08/2019 - 09/2019</p>
-                    <p>             
-                       <p>  Lors de mon stage au sein de la SONABEL, j'ai intégré plusieurs services 
-                        techniques de la centrale, ce qui m'a permis d'acquérir une vision globale 
-                        du fonctionnement d'une unité de production d'électricité. Ce stage s'est 
+                    <p>
+                    <p> Lors de mon stage au sein de la SONABEL, j'ai intégré plusieurs services
+                        techniques de la centrale, ce qui m'a permis d'acquérir une vision globale
+                        du fonctionnement d'une unité de production d'électricité. Ce stage s'est
                         articulé autour de quatre grands axes : la production, la commande, l'analyse
-                         du combustible et la maintenance électrique.</p>
+                        du combustible et la maintenance électrique.</p>
 
-                        <p> 🔌 1. Service de Production - Groupes thermiques <br>
+                    <p> 🔌 1. Service de Production - Groupes thermiques <br>
                         Affecté à l'équipe chargée des groupes thermiques, ma mission consistait à : <br>
-                        
+
                         Assurer le démarrage manuel ou automatique des groupes sur demande ; <br>
-                        
-                        Suivre toutes les étapes nécessaires au bon fonctionnement et à la sécurité des équipements ; <br>
-                        
+
+                        Suivre toutes les étapes nécessaires au bon fonctionnement et à la sécurité des équipements ;
+                        <br>
+
                         Réagir rapidement aux appels de démarrage via les canaux de communication interne.</p>
-                        
-                        <p> 🖥️ 2. Salle de Commande - Synchronisation réseau <br>
+
+                    <p> 🖥️ 2. Salle de Commande - Synchronisation réseau <br>
                         Dans la salle de commande : <br>
-                        
+
                         J'ai participé au contrôle de la synchronisation des groupes avec le réseau national ; <br>
-                        
+
                         J'ai appris à surveiller les paramètres critiques : tension, fréquence, phase (déphasage) ; <br>
-                        
-                        J'ai observé le dispatching de l'énergie produite et le suivi de la facturation de l'énergie injectée vers l'extérieur.</p>
-                        
-                        <p> 🧪 3. Département Analyse de Combustible <br>
+
+                        J'ai observé le dispatching de l'énergie produite et le suivi de la facturation de l'énergie
+                        injectée vers l'extérieur.</p>
+
+                    <p> 🧪 3. Département Analyse de Combustible <br>
                         Ce service avait pour mission de : <br>
-                        
-                        Tester la qualité du carburant (Diesel Distillate Oil (DDO) ou fioul lourd) utilisé pour alimenter les groupes ; <br>
-                        
+
+                        Tester la qualité du carburant (Diesel Distillate Oil (DDO) ou fioul lourd) utilisé pour
+                        alimenter les groupes ; <br>
+
                         Vérifier que le combustible respecte les normes techniques pour un fonctionnement optimal.</p>
-                        
-                        <p> 🔧 4. Service de Maintenance Électrique <br>
+
+                    <p> 🔧 4. Service de Maintenance Électrique <br>
                         Dans ce dernier volet : <br>
-                        
-                        J'ai participé à la maintenance des moteurs électriques, démarreurs, armoires et circuits de commande ; <br>
-                        
+
+                        J'ai participé à la maintenance des moteurs électriques, démarreurs, armoires et circuits de
+                        commande ; <br>
+
                         J'ai étudié les plans électriques de la centrale ; <br>
-                        
+
                         J'ai analysé les circuits de combustible et de refroidissement des groupes thermiques. </p>
-                        
-                        <p> 🧠 Compétences développées : <br>
-                        
+
+                    <p> 🧠 Compétences développées : <br>
+
                         Supervision et démarrage de groupes thermiques ; <br>
-                        
+
                         Contrôle de synchronisation réseau ; <br>
-                        
+
                         Notions d'analyse énergétique et de gestion du combustible ; <br>
-                        
+
                         Maintenance préventive et corrective d'équipements électriques industriels ; <br>
-                        
+
                         Lecture et interprétation de schémas électriques et fonctionnels complexes.</p>
                 </div>
             </div>
@@ -483,17 +1077,41 @@
 
                 <div class="col-md-6 mb-4">
                     <div class="certification-card">
+                        <img src="imag\autocad-electrical.webp" alt="Certification" class="certification-image">
+                        <div class="certification-content">
+                            <h4>Certificat de formation sur Autocad Electrical 2024</h4>
+                            <p class="certification-date">Juin 2025</p>
+                            <p class="certification-description">Cette certification atteste de ma maîtrise du logiciel
+                                AutoCAD Electrical 2024, un outil essentiel
+                                pour la conception et la documentation de systèmes électriques.
+                                Elle m'a permis de développer des compétences en création de schémas électriques
+                                automatisés, en gestion de projets multi-fils et
+                                unifilaires, ainsi qu'en annotation et numérotation intelligente des composants.
+                                Grâce à cette formation, je suis désormais capable d'optimiser le processus de
+                                conception de tableaux électriques et d'assurer une
+                                meilleure précision technique dans les projets d'ingénierie.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="certification-card">
                         <img src="imag\logoHTML_CSS.png" alt="Certification" class="certification-image">
                         <div class="certification-content">
                             <h4>Certificat de formation sur HTML et CSS</h4>
                             <p class="certification-date">Fevrier 2025</p>
-                            <p class="certification-description">J'ai suivi une formation en développement web front-end axée sur HTML et CSS, divisée en deux phases :
+                            <p class="certification-description">J'ai suivi une formation en développement web front-end
+                                axée sur HTML et CSS, divisée en deux phases :
 
-                                La première phase, déjà achevée, m'a permis d'acquérir les bases essentielles de la création de pages web structurées et stylisées.
-                                
-                                Actuellement en deuxième phase, j'approfondis mes compétences en apprenant à concevoir des sites web plus interactifs, dynamiques
-                                 et esthétiques, avec une attention particulière portée à l'ergonomie, l'attractivité visuelle et la réactivité.</p>
-                            <a href="https://drive.google.com/file/d/1lpohjszPKyTR11tXqG2Bb7tr8xwg5Zy8/view?usp=drive_link" class="certification-link">Voir le certificat <i class="fas fa-external-link-alt"></i></a>
+                                La première phase, déjà achevée, m'a permis d'acquérir les bases essentielles de la
+                                création de pages web structurées et stylisées.
+
+                                Actuellement en deuxième phase, j'approfondis mes compétences en apprenant à concevoir
+                                des sites web plus interactifs, dynamiques
+                                et esthétiques, avec une attention particulière portée à l'ergonomie, l'attractivité
+                                visuelle et la réactivité.</p>
+
                         </div>
                     </div>
                 </div>
@@ -504,15 +1122,17 @@
                         <div class="certification-content">
                             <h4>Certificat de formation sur l'introduction a l'intelligence artificielle et Python</h4>
                             <p class="certification-date">Mai 2023</p>
-                            <p class="certification-description">J'ai participé à une formation organisée par l'AEBM du Burkina Faso au Maroc, axée sur l'initiation 
-                                à l'intelligence artificielle et à la programmation Python. Cette formation m'a permis de : <br>
+                            <p class="certification-description">J'ai participé à une formation organisée par l'AEBM du
+                                Burkina Faso au Maroc, axée sur l'initiation
+                                à l'intelligence artificielle et à la programmation Python. Cette formation m'a permis
+                                de : <br>
 
                                 Comprendre les fondements de l'IA (algorithmes, logique, applications) ; <br>
-                                
+
                                 Apprendre les bases de la programmation Python à travers des cas pratiques ; <br>
-                                
+
                                 Renforcer ma culture numérique et mon intérêt pour les technologies émergentes.</p>
-                            <a href="https://drive.google.com/file/d/1VyjAHpdlGM2ri1V0e-dTEaXfr7Ar41YY/view?usp=drive_link" class="certification-link">Voir le certificat <i class="fas fa-external-link-alt"></i></a>
+
                         </div>
                     </div>
                 </div>
@@ -523,11 +1143,15 @@
                         <div class="certification-content">
                             <h4>Attestation d'excellence scolaire</h4>
                             <p class="certification-date">Juillet 2022</p>
-                            <p class="certification-description">🎓 Excellence académique - Baccalauréat Électrotechnique
-                                Au terme de ma formation secondaire en électrotechnique, j'ai obtenu mon baccalauréat avec
-                                 la première place au classement national au Burkina Faso. Ce résultat témoigne de mon engagement,
-                                  de ma rigueur et de ma capacité à me distinguer par l'excellence académique dans un domaine technique exigeant.</p>
-                            <a href="https://drive.google.com/file/d/1LPfDfh9-Q_MH9B2IrkBSinq6Rf4CnawS/view?usp=drive_link" class="certification-link">Voir l'Attestation <i class="fas fa-external-link-alt"></i></a>
+                            <p class="certification-description">🎓 Excellence académique - Baccalauréat
+                                Électrotechnique
+                                Au terme de ma formation secondaire en électrotechnique, j'ai obtenu mon baccalauréat
+                                avec
+                                la première place au classement national au Burkina Faso. Ce résultat témoigne de mon
+                                engagement,
+                                de ma rigueur et de ma capacité à me distinguer par l'excellence académique dans un
+                                domaine technique exigeant.</p>
+
                         </div>
                     </div>
                 </div>
@@ -537,12 +1161,16 @@
                         <div class="certification-content">
                             <h4>Brevet d'Etudes Professionnelles en Electrotechnique</h4>
                             <p class="certification-date">Juillet 2021</p>
-                            <p class="certification-description">Dans le cadre de ma formation secondaire en électrotechnique, j'ai obtenu le
-                                 Brevet d'Études Professionnelles (BEP) à l'issue d'un examen national passé en classe de première. Ce diplôme 
-                                 atteste de mes compétences pratiques et théoriques dans les domaines de l'installation électrique, du câblage, 
-                                 des machines électriques et de la lecture de plans techniques, constituant ainsi une base solide pour la poursuite
-                                  de mes études techniques.</p>
-                            <a href="https://drive.google.com/file/d/1CUJB3zJb15tiGSGT2pT7ukNqFBlQBxbN/view?usp=drive_link" class="certification-link">Voir le Brevet <i class="fas fa-external-link-alt"></i></a>
+                            <p class="certification-description">Dans le cadre de ma formation secondaire en
+                                électrotechnique, j'ai obtenu le
+                                Brevet d'Études Professionnelles (BEP) à l'issue d'un examen national passé en classe de
+                                première. Ce diplôme
+                                atteste de mes compétences pratiques et théoriques dans les domaines de l'installation
+                                électrique, du câblage,
+                                des machines électriques et de la lecture de plans techniques, constituant ainsi une
+                                base solide pour la poursuite
+                                de mes études techniques.</p>
+
                         </div>
                     </div>
                 </div>
@@ -552,22 +1180,112 @@
                         <div class="certification-content">
                             <h4>Certification d'aptitude Professionnelle en Electromécanique</h4>
                             <p class="certification-date">Juin 2019</p>
-                            <p class="certification-description">Au cours de ma formation secondaire, j'ai obtenu le Certificat d'Aptitude Professionnelle (CAP) 
-                                en électromécanique, validant mes compétences de base en électricité, en mécanique industrielle et en maintenance des équipements 
-                                électromécaniques. Ce diplôme marque une étape clé dans mon parcours, en posant les fondations techniques solides qui ont soutenu
-                                 la suite de mes études en électrotechnique.</p>
-                            <a href="https://drive.google.com/file/d/1cSPQsvR_zh3f5ab1_ftOqJusjLpH_3p3/view?usp=drive_link" class="certification-link">Voir le certificat <i class="fas fa-external-link-alt"></i></a>
+                            <p class="certification-description">Au cours de ma formation secondaire, j'ai obtenu le
+                                Certificat d'Aptitude Professionnelle (CAP)
+                                en électromécanique, validant mes compétences de base en électricité, en mécanique
+                                industrielle et en maintenance des équipements
+                                électromécaniques. Ce diplôme marque une étape clé dans mon parcours, en posant les
+                                fondations techniques solides qui ont soutenu
+                                la suite de mes études en électrotechnique.</p>
+
                         </div>
                     </div>
                 </div>
 
 
-                
+
             </div>
         </section>
     </main>
 
-    <footer class="bg-dark text-white py-5">
+    <!-- Section Contact -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Me Contacter</h2>
+                <p class="section-subtitle">N'hésitez pas à me contacter pour toute opportunité ou collaboration</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="contact-info">
+                                    <h3 class="mb-4">Informations de contact</h3>
+                                    <div class="info-item">
+                                        <i class="fas fa-envelope"></i>
+                                        <div>
+                                            <h4>Email</h4>
+                                            <p>arounazoubga54@gmail.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-phone"></i>
+                                        <div>
+                                            <h4>Téléphone</h4>
+                                            <p>+212 620-754-964</p>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <div>
+                                            <h4>Localisation</h4>
+                                            <p>Maroc</p>
+                                        </div>
+                                    </div>
+                                    <div class="social-links mt-5">
+                                        <a href="https://linkedin.com/in/arouna-dindane-zougba-a6944933b" class="me-3"
+                                            title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="https://github.com/arouna-zougba" class="me-3" title="GitHub"><i
+                                                class="fab fa-github"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <form id="contactForm" class="contact-form">
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="name" name="name"
+                                                    placeholder="Votre nom" required>
+                                                <div class="invalid-feedback">Veuillez entrer votre nom.</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" id="email" name="email"
+                                                    placeholder="Votre email" required>
+                                                <div class="invalid-feedback">Veuillez entrer une adresse email valide.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <input type="text" class="form-control" id="subject" name="subject"
+                                            placeholder="Sujet" required>
+                                        <div class="invalid-feedback">Veuillez entrer un sujet.</div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <textarea class="form-control" id="message" name="message" rows="5"
+                                            placeholder="Votre message" required></textarea>
+                                        <div class="invalid-feedback">Veuillez entrer votre message.</div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary" id="submitBtn">
+                                        <span class="me-2">Envoyer le message</span>
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 mb-4 mb-md-0">
@@ -590,7 +1308,8 @@
                 <div class="col-md-6">
                     <h4 class="footer-title">Réseaux Sociaux</h4>
                     <div class="social-links">
-                        <a href="https://linkedin.com/in/arouna-dindane-zougba-a6944933b" class="social-link" title="LinkedIn">
+                        <a href="https://linkedin.com/in/arouna-dindane-zougba-a6944933b" class="social-link"
+                            title="LinkedIn">
                             <i class="fab fa-linkedin"></i>
                         </a>
                         <a href="https://github.com/Arouna-Zoubga" class="social-link" title="GitHub">
@@ -606,5 +1325,22 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        // Initialisation d'EmailJS avec votre User ID
+        (function () {
+            emailjs.init("YOUR_PUBLIC_KEY"); // Remplacez par votre clé publique EmailJS
+        })();
+    </script>
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- SweetAlert2 pour les notifications -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Script principal -->
+    <script src="script.js"></script>
 </body>
+
 </html>
